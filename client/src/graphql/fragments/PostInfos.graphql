@@ -1,0 +1,14 @@
+fragment PostInfos on Post {
+    id
+    title
+    textTruncated
+    createdAt
+    updatedAt
+    authorId
+    points
+    voteStatus
+    author {
+        id
+        username
+    }
+}

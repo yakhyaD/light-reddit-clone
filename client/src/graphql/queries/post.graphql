@@ -1,0 +1,16 @@
+query Post($id: Int!){
+    post(id: $id){
+        id
+        title
+        text
+        createdAt
+        updatedAt
+        authorId
+        points
+        voteStatus
+        author {
+            id
+            username
+        }
+    }
+}
